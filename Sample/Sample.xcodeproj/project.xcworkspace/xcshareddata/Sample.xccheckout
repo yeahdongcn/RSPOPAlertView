@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B5714B2F-3F6D-462B-8BA7-304970EBA4A3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Sample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F99F1CC7-AD7D-497D-A378-80D82F69D80B</key>
+		<string>https://github.com/yeahdongcn/RSPOPAlertView.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Sample/Sample.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F99F1CC7-AD7D-497D-A378-80D82F69D80B</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/yeahdongcn/RSPOPAlertView.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F99F1CC7-AD7D-497D-A378-80D82F69D80B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F99F1CC7-AD7D-497D-A378-80D82F69D80B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RSPOPAlertView</string>
+		</dict>
+	</array>
+</dict>
+</plist>

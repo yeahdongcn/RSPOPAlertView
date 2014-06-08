@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="14A238x" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="mXE-Bc-kVL" customClass="RSPOPAlertView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view appearanceType="aqua" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y6n-h8-GRN">
+                    <rect key="frame" x="0.0" y="0.0" width="322" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <view appearanceType="aqua" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="diq-Zj-Nqu">
+                    <rect key="frame" x="20" y="234" width="282" height="101"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1eB-sG-J6h" customClass="RSPlainButton">
+                            <rect key="frame" x="25" y="51" width="96" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="PUA-gU-mjA"/>
+                            </constraints>
+                            <state key="normal" title="Button">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o56-U4-0M6" customClass="RSPlainButton">
+                            <rect key="frame" x="161" y="50" width="96" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="99" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="262" translatesAutoresizingMaskIntoConstraints="NO" id="7K7-Xg-9Qu">
+                            <rect key="frame" x="10" y="15" width="262" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="neW-9G-e9T" customClass="RSPlainButton">
+                            <rect key="frame" x="25" y="51" width="232" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="1eB-sG-J6h" secondAttribute="bottom" constant="15" id="2pj-yy-6AJ"/>
+                        <constraint firstItem="neW-9G-e9T" firstAttribute="top" secondItem="1eB-sG-J6h" secondAttribute="top" id="9FZ-L5-knq"/>
+                        <constraint firstItem="neW-9G-e9T" firstAttribute="trailing" secondItem="o56-U4-0M6" secondAttribute="trailing" id="DZX-P2-k2W"/>
+                        <constraint firstAttribute="trailing" secondItem="o56-U4-0M6" secondAttribute="trailing" constant="25" id="Fan-E1-MCD"/>
+                        <constraint firstItem="1eB-sG-J6h" firstAttribute="bottom" secondItem="o56-U4-0M6" secondAttribute="bottom" id="ILJ-09-cUa"/>
+                        <constraint firstItem="neW-9G-e9T" firstAttribute="leading" secondItem="1eB-sG-J6h" secondAttribute="leading" id="KWF-XC-94v"/>
+                        <constraint firstItem="7K7-Xg-9Qu" firstAttribute="leading" secondItem="diq-Zj-Nqu" secondAttribute="leading" constant="10" id="TZp-CT-i9t"/>
+                        <constraint firstItem="1eB-sG-J6h" firstAttribute="leading" secondItem="diq-Zj-Nqu" secondAttribute="leading" constant="25" id="U8E-6r-ixy"/>
+                        <constraint firstItem="1eB-sG-J6h" firstAttribute="top" secondItem="7K7-Xg-9Qu" secondAttribute="bottom" constant="15" id="Y5R-Dh-XQd"/>
+                        <constraint firstItem="o56-U4-0M6" firstAttribute="leading" secondItem="1eB-sG-J6h" secondAttribute="trailing" constant="40" id="fCK-G0-yWO"/>
+                        <constraint firstAttribute="trailing" secondItem="7K7-Xg-9Qu" secondAttribute="trailing" constant="10" id="jg2-1I-cRR"/>
+                        <constraint firstItem="1eB-sG-J6h" firstAttribute="width" secondItem="o56-U4-0M6" secondAttribute="width" id="qUb-Tv-gww"/>
+                        <constraint firstItem="7K7-Xg-9Qu" firstAttribute="top" secondItem="diq-Zj-Nqu" secondAttribute="top" constant="15" id="r9G-fW-kXz"/>
+                        <constraint firstItem="neW-9G-e9T" firstAttribute="bottom" secondItem="1eB-sG-J6h" secondAttribute="bottom" id="uvU-Wp-OTk"/>
+                        <constraint firstItem="1eB-sG-J6h" firstAttribute="height" secondItem="o56-U4-0M6" secondAttribute="height" id="voC-oh-qln"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="diq-Zj-Nqu" secondAttribute="trailing" constant="20" id="3vE-Gn-dxz"/>
+                <constraint firstAttribute="bottom" secondItem="y6n-h8-GRN" secondAttribute="bottom" id="Muj-AN-lao"/>
+                <constraint firstAttribute="centerY" secondItem="diq-Zj-Nqu" secondAttribute="centerY" id="Ufl-ci-vLK"/>
+                <constraint firstAttribute="trailing" secondItem="y6n-h8-GRN" secondAttribute="trailing" id="Wuf-dt-nsg"/>
+                <constraint firstItem="diq-Zj-Nqu" firstAttribute="leading" secondItem="mXE-Bc-kVL" secondAttribute="leading" constant="20" id="jpb-Hn-XA2"/>
+                <constraint firstItem="y6n-h8-GRN" firstAttribute="top" secondItem="mXE-Bc-kVL" secondAttribute="top" id="ucl-y1-rw6"/>
+                <constraint firstItem="y6n-h8-GRN" firstAttribute="leading" secondItem="mXE-Bc-kVL" secondAttribute="leading" id="uli-Ff-2Ou"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="alert" destination="diq-Zj-Nqu" id="fjm-TW-UqQ"/>
+                <outlet property="background" destination="y6n-h8-GRN" id="wHd-1y-jzW"/>
+                <outlet property="cancelButton" destination="1eB-sG-J6h" id="4aU-1W-MQw"/>
+                <outlet property="otherButton" destination="o56-U4-0M6" id="Gqe-ul-fg5"/>
+                <outlet property="singleButton" destination="neW-9G-e9T" id="Oo3-GN-1H2"/>
+                <outlet property="text" destination="7K7-Xg-9Qu" id="0YQ-zJ-LP6"/>
+                <outlet property="y" destination="Ufl-ci-vLK" id="78w-y5-JXH"/>
+            </connections>
+        </view>
+    </objects>
+</document>

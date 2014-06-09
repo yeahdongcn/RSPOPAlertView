@@ -13,7 +13,7 @@
 #define SharedWindow ((UIWindow *)[[[UIApplication sharedApplication] delegate] window])
 #define LoadXib(name) [[[NSBundle mainBundle] loadNibNamed:name owner:nil options:nil] firstObject]
 
-@interface RSPOPAlertView ()
+@interface RSPOPAlertView () <UIGestureRecognizerDelegate>
 
 @property (nonatomic, weak) IBOutlet UIView *background;
 
@@ -128,6 +128,7 @@
     self.background.backgroundColor = [UIColor blackColor];
     
     UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismiss)];
+    tapGestureRecognizer.delegate = self;
     [self addGestureRecognizer:tapGestureRecognizer];
     
     self.alert.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.9];
@@ -163,6 +164,20 @@
     [alert resetButtonAction];
     [SharedWindow addSubview:alert];
     [alert show];
+}
+
+#pragma mark - UIGestureRecognizerDelegate
+
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
+{
+    CGPoint location = [gestureRecognizer locationInView:self.alert];
+    if (location.x >= 0
+        && location.y >= 0
+        && location.x <= self.alert.bounds.size.width
+        && location.x <= self.alert.bounds.size.height) {
+        return NO;
+    }
+    return YES;
 }
 
 @end

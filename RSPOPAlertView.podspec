@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RSPOPAlertView"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "Fullscreen pop-able and block-able alert view."
   s.homepage     = "https://github.com/yeahdongcn/RSPOPAlertView"
   s.license      = { :type => 'MIT', :file => 'LICENSE.md' }

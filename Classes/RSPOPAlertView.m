@@ -36,6 +36,9 @@
     POPBasicAnimation *opacityAnimation = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerOpacity];
     opacityAnimation.toValue = @(0.2);
     [self.background.layer pop_addAnimation:opacityAnimation forKey:@"opacityAnimation"];
+    
+    opacityAnimation = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerOpacity];
+    opacityAnimation.toValue = @(1);
     [self.alert.layer pop_addAnimation:opacityAnimation forKey:@"opacityAnimation"];
     
     POPSpringAnimation *positionAnimation = [POPSpringAnimation animationWithPropertyNamed:kPOPLayoutConstraintConstant];
@@ -52,6 +55,7 @@
 - (void)dismiss
 {
     POPBasicAnimation *opacityAnimation = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerOpacity];
+    opacityAnimation.fromValue = @(0.2);
     opacityAnimation.toValue = @(0);
     opacityAnimation.completionBlock = ^(POPAnimation *anim, BOOL finished) {
         if (finished) {
@@ -59,6 +63,10 @@
         }
     };
     [self.background.layer pop_addAnimation:opacityAnimation forKey:@"opacityAnimation"];
+    
+    opacityAnimation = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerOpacity];
+    opacityAnimation.fromValue = @(1);
+    opacityAnimation.toValue = @(0);
     [self.alert.layer pop_addAnimation:opacityAnimation forKey:@"opacityAnimation"];
     
     POPSpringAnimation *positionAnimation = [POPSpringAnimation animationWithPropertyNamed:kPOPLayoutConstraintConstant];
